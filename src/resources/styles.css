@@ -75,14 +75,27 @@ footer .footer_copyright {
 ======================*/
 
 
-.carrousel_wrapper {
+.carousel_wrapper {
     height:700px;
     overflow: hidden;
 }
 
-.carrousel_image {
+.carousel_image {
     
     background-size: cover !important;
+}
+
+.slick-dots{
+    bottom: 10px !important;
+}
+
+.slick-next{
+    right: 10px !important;
+    z-index: 1;
+}
+.slick-prev{
+    left: 10px !important;
+    z-index: 1;
 }
 
 .artist_name {
