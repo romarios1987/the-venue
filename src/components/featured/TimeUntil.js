@@ -3,8 +3,11 @@ import Fade from 'react-reveal/Fade';
 
 class TimeUntil extends Component {
 
+
+
     state = {
-        deadLine: 'Jan, 1, 2019', // Format Dec, 11, 2018
+        // deadLine: 'Jan, 1, 2020', // Format Dec, 11, 2018
+        deadLine: new Date(new Date().getFullYear(), 11, 32).toLocaleDateString(),
         days: 0,
         hours: 0,
         minutes: 0,
@@ -14,7 +17,6 @@ class TimeUntil extends Component {
     getTimeUntil(deadLine) {
         const time = Date.parse(deadLine) - Date.parse(new Date());
         if (time < 0) {
-            console.log('Date passed');
         } else {
             const seconds = Math.floor((time / 1000) % 60);
             const minutes = Math.floor((time / 1000 / 60) % 60);
@@ -32,7 +34,6 @@ class TimeUntil extends Component {
     }
 
     render() {
-
         const {days, hours, minutes, seconds} = this.state;
         return (
             <Fade left delay={3000}>

@@ -8,4 +8,4 @@ Practice creating static web page in React.js
 - Material-UI
 
 #### Deployment to Surge
-[The Venue](http://lush-nose.surge.sh/)
+[The Venue](http://tranquil-pets.surge.sh/)
