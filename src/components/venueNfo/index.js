@@ -36,7 +36,7 @@ const VenueNfo = () => {
 
                                     </div>
                                     <div className="vn_title">Event Location</div>
-                                    <div className="vn_desc">Lviv, Chornovola prosp., 45</div>
+                                    <div className="vn_desc">Lviv, Chornovola prosp., 47</div>
                                 </div>
                             </div>
                         </div>
